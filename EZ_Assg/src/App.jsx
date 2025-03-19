@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ezLogo from "./assets/ezwrk.svg";
 import "./App.css";
 
 function App() {
@@ -59,8 +60,13 @@ function App() {
       <div className="top-section">
         <div className="header">
           <div className="logo">
-            <span className="ez">EZ</span>
-            <span className="works">Works</span>
+
+          <div className="card">
+          <a href="https://www.ez.works/" target="_blank">
+            <img src={ezLogo} className="logo" alt="Ez Works logo" />
+          </a>
+        </div>
+             
           </div>
           <h1>Suite Of Business Support Services</h1>
           <p className="subtitle">
@@ -155,7 +161,7 @@ function App() {
           </div>
         </div>
       </div>
-      
+
     </div>
   );
 }
